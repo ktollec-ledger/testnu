@@ -26,6 +26,7 @@ jobs:
         run: |
           source github.nu
           nugha push-output {bonjour: trucmachin}
+          echo $env.GITHUB_OUTPUT
 
       - name: Test output
         run: |
