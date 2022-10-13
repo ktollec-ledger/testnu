@@ -24,6 +24,7 @@ jobs:
       - name: Run a multi-line script
         id: loul
         run: |
+          source github.nu
           nugha push-output {bonjour: trucmachin}
 
       - name: Test output
