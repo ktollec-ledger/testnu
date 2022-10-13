@@ -22,5 +22,10 @@ jobs:
           lib-version: feat/nushell
 
       - name: Run a multi-line script
+        id: loul
         run: |
-          ls
+          nugha push-output {bonjour: trucmachin}
+
+      - name: Test output
+        run: |
+          echo ${{ steps.loul.outputs.bonjour }}
